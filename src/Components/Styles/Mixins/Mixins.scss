@@ -1,0 +1,30 @@
+@mixin setFont($typeface, $size, $weight) {
+  font-family: $typeface;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin setFlex($flexType, $justifyType, $alignType, $direction) {
+  display: $flexType;
+  justify-content: $justifyType;
+  align-items: $alignType;
+  flex-direction: $direction;
+}
+
+@mixin setProBarChild($bgVal, $colorVal, $chartFill, $chartTransform, $timeBG) {
+  background-color: $bgVal;
+  color: $colorVal;
+
+  .chart {
+    svg {
+      fill: $chartFill !important;
+      transform: $chartTransform;
+    }
+  }
+
+  .time-area {
+    &::before {
+      background-color: $timeBG;
+    }
+  }
+}

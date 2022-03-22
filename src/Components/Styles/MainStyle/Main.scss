@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
 @import "../Variables/Variables.scss";
-// @import "../Mixins/Mixins.scss";
+@import "../Mixins/Mixins.scss";
 
 html {
   font-size: 16px;
@@ -96,21 +96,189 @@ body {
       header {
         .title {
           h1 {
-            font-family: $main-font;
-            font-size: 2.3em;
-            font-weight: 600;
+            @include setFont($main-font, 2.3em, 600);
             text-transform: capitalize;
             color: $secondary-txt;
             line-height: 1.2em;
           }
 
           span {
-            font-family: $main-font;
-            font-size: 1em;
-            font-weight: 500;
+            @include setFont($main-font, 1em, 500);
             display: block;
             color: $primary-text;
             margin-top: 0.4em;
+          }
+        }
+
+        .search-bar {
+          .grp {
+            position: relative;
+
+            img {
+              height: 1.35em;
+              display: inline-block;
+              position: absolute;
+              left: 18px;
+              top: 50%;
+              transform: translate(0, -50%);
+            }
+
+            input {
+              display: block;
+              padding: 14px 50px 14px 54px;
+              border-radius: 50px;
+              width: 100%;
+              outline: none;
+              background: linear-gradient(90deg, $off-blue, #f4f7fc);
+            }
+          }
+        }
+      }
+
+      .dashboard-area {
+        margin-top: 3em;
+        .productivity-listing {
+          // Productivity Bar
+          .pro-bar {
+            background-color: $light-green;
+            padding: 0.95em;
+            color: $secondary-txt;
+            margin-bottom: 1.2em;
+            @include setFlex(flex, space-between, center, row);
+            box-sizing: border-box;
+            border-radius: 1em;
+            box-shadow: 0 2px 8px rgba(1, 86, 91, 0.2);
+
+            &:nth-child(2) {
+              @include setProBarChild(
+                $normal-green,
+                $background-white,
+                $light-green,
+                scale(-1, 1),
+                $light-green
+              );
+            }
+
+            &:nth-child(3) {
+              @include setProBarChild(
+                $dark-blue,
+                $background-white,
+                $light-green,
+                scale(-1, 1) rotate(180deg),
+                $primary-text
+              );
+            }
+          }
+
+          .percent-area {
+            @include setFlex(flex, flex-start, center, row);
+            width: 50%;
+            .date-tag {
+              @include setFlex(flex, initial, center, column);
+              background-color: $background-white;
+              padding: 0.6em 1.25em;
+              box-sizing: border-box;
+              border-radius: 0.7em;
+              margin-right: 2.5em;
+              position: relative;
+              box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+              .date,
+              .day {
+                display: block;
+                position: relative;
+                z-index: 99;
+              }
+
+              .day {
+                text-transform: capitalize;
+                font-size: 0.875em;
+                font-weight: 500;
+                color: $primary-text;
+              }
+
+              .date {
+                text-transform: capitalize;
+                font-size: 1.875em;
+                font-weight: 600;
+                color: $secondary-txt;
+              }
+
+              &::after {
+                content: "";
+                height: 40px;
+                width: 40px;
+                display: block;
+                background-color: $background-white;
+                position: absolute;
+                top: 50%;
+                right: -18px;
+                border-radius: 4px;
+                transform: translate(0, -50%) rotate(45deg) skew(24deg, 24deg);
+              }
+            }
+
+            .fancy-chart {
+              .chart-title {
+                text-transform: capitalize;
+                @include setFont($main-font, 0.875em, 600);
+              }
+
+              .chart {
+                @include setFlex(flex, flex-start, center, row);
+                position: relative;
+                top: 0.7em;
+
+                svg {
+                  fill: $dark-blue;
+                  height: 1em;
+                  width: 5.6em;
+                }
+
+                .percent-count {
+                  display: block;
+                  position: relative;
+                  left: 1em;
+                  bottom: 0.3em;
+                  background-color: $background-white;
+                  padding: 3px 9px;
+                  box-sizing: border-box;
+                  border-radius: 20px;
+                  font-size: 0.85em;
+                  font-weight: 600;
+                  color: $secondary-txt;
+                }
+              }
+            }
+          }
+
+          .time-area {
+            @include setFlex(flex, center, flex-start, row);
+            width: 50%;
+            position: relative;
+            .grp {
+              @include setFlex(flex, flex-start, flex-start, column);
+              margin-left: 2.5em;
+              .title {
+                @include setFont($main-font, 0.875em, 600);
+              }
+
+              .time {
+                @include setFont($main-font, 1.175em, 700);
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              height: 50%;
+              width: 1px;
+              display: block;
+              top: 50%;
+              transform: translate(0, -50%);
+              background-color: $normal-green;
+              left: 0;
+            }
           }
         }
       }

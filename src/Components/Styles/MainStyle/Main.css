@@ -107,4 +107,270 @@ body {
   color: #627f83;
   margin-top: 0.4em;
 }
+
+.wrapper .content .main header .search-bar .grp {
+  position: relative;
+}
+
+.wrapper .content .main header .search-bar .grp img {
+  height: 1.35em;
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.wrapper .content .main header .search-bar .grp input {
+  display: block;
+  padding: 14px 50px 14px 54px;
+  border-radius: 50px;
+  width: 100%;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#edf6fb), to(#f4f7fc));
+  background: linear-gradient(90deg, #edf6fb, #f4f7fc);
+}
+
+.wrapper .content .main .dashboard-area {
+  margin-top: 3em;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar {
+  background-color: #e2f297;
+  padding: 0.95em;
+  color: #082b2f;
+  margin-bottom: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 2px 8px rgba(1, 86, 91, 0.2);
+          box-shadow: 0 2px 8px rgba(1, 86, 91, 0.2);
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) {
+  background-color: #5aba8a;
+  color: #fafafa;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .chart svg {
+  fill: #e2f297 !important;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(2) .time-area::before {
+  background-color: #e2f297;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) {
+  background-color: #01565b;
+  color: #fafafa;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .chart svg {
+  fill: #e2f297 !important;
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+          transform: scale(-1, 1) rotate(180deg);
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .pro-bar:nth-child(3) .time-area::before {
+  background-color: #627f83;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafa;
+  padding: 0.6em 1.25em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.7em;
+  margin-right: 2.5em;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag .date,
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag .day {
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag .day {
+  text-transform: capitalize;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #627f83;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag .date {
+  text-transform: capitalize;
+  font-size: 1.875em;
+  font-weight: 600;
+  color: #082b2f;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .date-tag::after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  display: block;
+  background-color: #fafafa;
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  border-radius: 4px;
+  -webkit-transform: translate(0, -50%) rotate(45deg) skew(24deg, 24deg);
+          transform: translate(0, -50%) rotate(45deg) skew(24deg, 24deg);
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .fancy-chart .chart-title {
+  text-transform: capitalize;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .fancy-chart .chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 0.7em;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .fancy-chart .chart svg {
+  fill: #01565b;
+  height: 1em;
+  width: 5.6em;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .percent-area .fancy-chart .chart .percent-count {
+  display: block;
+  position: relative;
+  left: 1em;
+  bottom: 0.3em;
+  background-color: #fafafa;
+  padding: 3px 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #082b2f;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .time-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  position: relative;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .time-area .grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2.5em;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .time-area .grp .title {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .time-area .grp .time {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.175em;
+  font-weight: 700;
+}
+
+.wrapper .content .main .dashboard-area .productivity-listing .time-area::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  display: block;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: #5aba8a;
+  left: 0;
+}
 /*# sourceMappingURL=Main.css.map */
