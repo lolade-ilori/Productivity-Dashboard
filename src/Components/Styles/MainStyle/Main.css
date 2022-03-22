@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .side-nav {
+  width: 110px;
+  height: 100vh;
+  border-right: solid 2px #ebf1f5;
+}
+
+.wrapper .side-nav .logo {
+  margin-bottom: 2em;
+  padding: 2em 0;
+}
+
+.wrapper .side-nav .logo img {
+  height: 3.8em;
+  margin: 0 auto;
+}
+
+.wrapper .side-nav .menu ul li {
+  margin-bottom: 2.6em;
+}
+
+.wrapper .side-nav .menu ul li a {
+  display: block;
+  position: relative;
+}
+
+.wrapper .side-nav .menu ul li a img {
+  height: 1.4em;
+  margin: 0 auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.wrapper .side-nav .menu ul li a .stroke {
+  display: none;
+}
+
+.wrapper .side-nav .menu ul li.active a img, .wrapper .side-nav .menu ul li:hover a img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.wrapper .side-nav .menu ul li.active a .stroke, .wrapper .side-nav .menu ul li:hover a .stroke {
+  height: 1.4em;
+  width: 3px;
+  border-radius: 6px;
+  background-color: #01565b;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.wrapper .side-nav .menu ul li.active a .stroke .half, .wrapper .side-nav .menu ul li:hover a .stroke .half {
+  display: block;
+  height: 50%;
+  width: inherit;
+  background-color: #5aba8a;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper .content {
+  width: 100%;
+}
+
+.wrapper .content .main {
+  height: 100vh;
+  padding: 2em 3em 0 3em;
+  border-right: solid 2px #ebf1f5;
+}
+
+.wrapper .content .main header .title h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 2.3em;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #082b2f;
+  line-height: 1.2em;
+}
+
+.wrapper .content .main header .title span {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  color: #627f83;
+  margin-top: 0.4em;
+}
+/*# sourceMappingURL=Main.css.map */

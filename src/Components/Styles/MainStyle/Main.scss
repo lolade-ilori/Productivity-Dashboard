@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+@import "../Variables/Variables.scss";
+// @import "../Mixins/Mixins.scss";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $background-white;
+  font-family: $main-font;
+}
+
+.wrapper {
+  display: flex;
+
+  //   SIDE NAVIGATION STYLES
+  .side-nav {
+    width: 110px;
+    height: 100vh;
+    border-right: solid 2px $lighter-grey;
+
+    .logo {
+      margin-bottom: 2em;
+      padding: 2em 0;
+
+      img {
+        height: 3.8em;
+        margin: 0 auto;
+      }
+    }
+
+    .menu {
+      ul {
+        li {
+          margin-bottom: 2.6em;
+          a {
+            display: block;
+            position: relative;
+            img {
+              height: 1.4em;
+              margin: 0 auto;
+              filter: grayscale(1);
+            }
+
+            .stroke {
+              display: none;
+            }
+          }
+
+          &.active,
+          &:hover {
+            a {
+              img {
+                filter: grayscale(0);
+              }
+
+              .stroke {
+                height: 1.4em;
+                width: 3px;
+                border-radius: 6px;
+                background-color: $dark-blue;
+                position: absolute;
+                right: 0;
+                top: 0;
+                overflow: hidden;
+                display: block;
+
+                .half {
+                  display: block;
+                  height: 50%;
+                  width: inherit;
+                  background-color: $normal-green;
+                  position: absolute;
+                  bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //   BODY CONTENT STYLES
+  .content {
+    width: 100%;
+    .main {
+      height: 100vh;
+      padding: 2em 3em 0 3em;
+      border-right: solid 2px $lighter-grey;
+
+      header {
+        .title {
+          h1 {
+            font-family: $main-font;
+            font-size: 2.3em;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $secondary-txt;
+            line-height: 1.2em;
+          }
+
+          span {
+            font-family: $main-font;
+            font-size: 1em;
+            font-weight: 500;
+            display: block;
+            color: $primary-text;
+            margin-top: 0.4em;
+          }
+        }
+      }
+    }
+
+    .profile-area {
+    }
+  }
+}
