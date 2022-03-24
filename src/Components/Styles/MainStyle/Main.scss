@@ -281,6 +281,185 @@ body {
             }
           }
         }
+
+        .h-title {
+          @include setFont($main-font, 1.75em, 600);
+          color: $secondary-txt;
+          text-align: center;
+        }
+
+        .monthly-statistics {
+          .statistics-chart {
+            height: 9.5em;
+            width: 9.5em;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            margin-bottom: 1.65em;
+            position: relative;
+            @include setFlex(flex, center, center, initial);
+
+            svg {
+              @include setSCOption($dark-blue, rotate(65deg), 99);
+              fill: none;
+              stroke-width: 0.1em;
+              stroke-dasharray: 58px;
+              stroke-linecap: round;
+              position: absolute;
+
+              &:nth-child(2) {
+                @include setSCOption($normal-green, rotate(35deg), 98);
+              }
+
+              &:nth-child(3) {
+                @include setSCOption($light-green, rotate(0deg), 97);
+              }
+
+              &:nth-child(4) {
+                @include setSCOption($off-blue, rotate(0deg), 96);
+                stroke-dasharray: 100px;
+              }
+            }
+
+            .decal-circle {
+              height: 4.5em;
+              width: 4.5em;
+              display: inline-block;
+              background-color: $light-green;
+              border-radius: 50%;
+              position: absolute;
+            }
+
+            .rocket {
+              height: 4em;
+              position: absolute;
+              bottom: 4em;
+            }
+          }
+
+          .statistics-progress {
+            @include setFlex(flex, space-between, initial, column);
+            height: 9.1em;
+
+            .stat {
+              .top-area {
+                @include setFlex(flex, space-between, initial, initial);
+                .stat-title {
+                  color: $primary-text;
+                  font-weight: 500;
+                }
+                .stat-percentage {
+                  color: $secondary-txt;
+                  font-weight: 700;
+                }
+              }
+
+              .stat-line {
+                margin-top: 0.35em;
+
+                .outer {
+                  display: block;
+                  width: 100%;
+                  height: 0.4em;
+                  border-radius: 25px;
+                  background-color: $lighter-grey;
+                  overflow: hidden;
+
+                  .inner {
+                    display: block;
+                    height: inherit;
+                    width: 40%;
+                    border-radius: 15px;
+                    background-color: $normal-green;
+                  }
+                }
+              }
+
+              &:nth-child(2) {
+                .outer {
+                  .inner {
+                    width: 80%;
+                    background-color: $dark-blue;
+                  }
+                }
+              }
+
+              &:nth-child(3) {
+                .outer {
+                  .inner {
+                    width: 25%;
+                    background-color: $light-green;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .upcoming-activity {
+          .h-title {
+            text-align: left;
+          }
+
+          .activity-chart {
+            position: relative;
+            display: flex;
+            margin-top: 4em;
+            height: 27.9em;
+            table {
+              height: 25.6em;
+              position: relative;
+              left: 60px;
+              thead {
+                .graph-time {
+                  th {
+                    position: relative;
+                    text-align: left;
+                    // padding: 0 1.5em;
+                    left: -20px;
+                    bottom: 1.75em;
+                    @include setFont($main-font, 0.9em, 600);
+                    color: $primary-text;
+                  }
+                }
+              }
+
+              tbody {
+                .graph-col {
+                  .bar {
+                    width: 5em;
+                    border-left: solid 1px $lighter-grey;
+                    position: relative;
+                  }
+                }
+              }
+            }
+
+            .graph-days {
+              position: absolute;
+              top: 1.75em;
+              bottom: 0;
+              width: 100%;
+              overflow: hidden;
+
+              .g-day {
+                height: 2.15em;
+                margin-bottom: 1.4em;
+                @include setFlex(flex, initial, center, initial);
+
+                .title {
+                  width: 2.2em;
+                  @include setFont($main-font, 0.9em, 500);
+                  color: $primary-text;
+
+                  &.active {
+                    font-weight: 700;
+                    color: $dark-blue;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
 

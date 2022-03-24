@@ -373,4 +373,232 @@ body {
   background-color: #5aba8a;
   left: 0;
 }
+
+.wrapper .content .main .dashboard-area .h-title {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.75em;
+  font-weight: 600;
+  color: #082b2f;
+  text-align: center;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart {
+  height: 9.5em;
+  width: 9.5em;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.65em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg {
+  stroke: #01565b;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  z-index: 99;
+  fill: none;
+  stroke-width: 0.1em;
+  stroke-dasharray: 58px;
+  stroke-linecap: round;
+  position: absolute;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(2) {
+  stroke: #5aba8a;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  z-index: 98;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(3) {
+  stroke: #e2f297;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 97;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart svg:nth-child(4) {
+  stroke: #edf6fb;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 96;
+  stroke-dasharray: 100px;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart .decal-circle {
+  height: 4.5em;
+  width: 4.5em;
+  display: inline-block;
+  background-color: #e2f297;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-chart .rocket {
+  height: 4em;
+  position: absolute;
+  bottom: 4em;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 9.1em;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area .stat-title {
+  color: #627f83;
+  font-weight: 500;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .top-area .stat-percentage {
+  color: #082b2f;
+  font-weight: 700;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line {
+  margin-top: 0.35em;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line .outer {
+  display: block;
+  width: 100%;
+  height: 0.4em;
+  border-radius: 25px;
+  background-color: #ebf1f5;
+  overflow: hidden;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat .stat-line .outer .inner {
+  display: block;
+  height: inherit;
+  width: 40%;
+  border-radius: 15px;
+  background-color: #5aba8a;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat:nth-child(2) .outer .inner {
+  width: 80%;
+  background-color: #01565b;
+}
+
+.wrapper .content .main .dashboard-area .monthly-statistics .statistics-progress .stat:nth-child(3) .outer .inner {
+  width: 25%;
+  background-color: #e2f297;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .h-title {
+  text-align: left;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4em;
+  height: 27.9em;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table {
+  height: 25.6em;
+  position: relative;
+  left: 60px;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table thead .graph-time th {
+  position: relative;
+  text-align: left;
+  left: -20px;
+  bottom: 1.75em;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #627f83;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart table tbody .graph-col .bar {
+  width: 5em;
+  border-left: solid 1px #ebf1f5;
+  position: relative;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days {
+  position: absolute;
+  top: 1.75em;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day {
+  height: 2.15em;
+  margin-bottom: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .title {
+  width: 2.2em;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #627f83;
+}
+
+.wrapper .content .main .dashboard-area .upcoming-activity .activity-chart .graph-days .g-day .title.active {
+  font-weight: 700;
+  color: #01565b;
+}
 /*# sourceMappingURL=Main.css.map */
