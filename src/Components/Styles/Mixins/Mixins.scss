@@ -34,3 +34,24 @@
   transform: $trasnformVal;
   z-index: $zIndex;
 }
+
+@mixin setTagOptions($leftVal, $contentBg, $tagColor) {
+  .tag {
+    left: $leftVal;
+
+    .content {
+      background-color: $contentBg;
+
+      &::after {
+        background-color: $contentBg;
+      }
+
+      .tag-title {
+        color: $tagColor;
+        &::before {
+          background-color: $tagColor;
+        }
+      }
+    }
+  }
+}

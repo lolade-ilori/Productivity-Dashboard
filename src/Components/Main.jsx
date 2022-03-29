@@ -279,21 +279,44 @@ function Main() {
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title active">Tue</span>
+                                                    <div className="tag">
+                                                        <div className="content">
+                                                            <span className="tag-title">Mabar.co Project</span>
+                                                        </div>
+                                                        <div className="tag-stroke">
+                                                            <div className="inner"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title">Wed</span>
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title">Thu</span>
+                                                    <div className="tag">
+                                                        <div className="content">
+                                                            <span className="tag-title">Meeting</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title">Fri</span>
+                                                    <div className="tag">
+                                                        <div className="content">
+                                                            <span className="tag-title">Web Redesign</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title">Sat</span>
                                                 </div>
                                                 <div className="g-day">
                                                     <span className="title">Sun</span>
+                                                    <div className="tag">
+                                                        <div className="content">
+                                                            <span className="tag-title">Sport</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
