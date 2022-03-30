@@ -8,6 +8,13 @@ import Doughnut from './assets/dougnut.png';
 import Settings from './assets/settings.png';
 import SearchIcon from './assets/search.png';
 import Rocket from './assets/rocket.png';
+import Laptop from './assets/laptop.png';
+import Layers from  './assets/layers.png';
+import Book from './assets/book.png';
+import RightArrow from './assets/right-arrow.png';
+import Ellipsis from './assets/ellipsis.png'
+import Edit from './assets/edit.png';
+import Avatar from './assets/avatar.png';
 import {ReactComponent as WaveSvg} from './assets/wave.svg';
 import {ReactComponent as CircleSvg} from './assets/circle.svg';
 
@@ -322,6 +329,54 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className="col-span-12 xl:col-span-6 2xl:col-span-6">
+                                    <div className="upcoming-schedule">
+                                        <h1 className="h-title">Upcoming Schedule</h1>
+                                        <div className="schedule-list">
+                                            <div className="schedule">
+                                                <span className="icon">
+                                                    <img src={Laptop} alt="" />
+                                                </span>
+
+                                                <div className="details">
+                                                    <h3 className="title">desk time redesign</h3>
+                                                    <span className="status">working on</span>
+                                                </div>
+
+                                                <span className="time">9:30 AM</span>
+                                            </div>
+
+                                            <div className="schedule">
+                                                <span className="icon">
+                                                    <img src={Layers} alt="" />
+                                                </span>
+
+                                                <div className="details">
+                                                    <h3 className="title">new landing page</h3>
+                                                    <span className="status">working on</span>
+                                                </div>
+
+                                                <span className="time">10:40 AM</span>
+                                            </div>
+
+                                            <div className="schedule">
+                                                <span className="icon">
+                                                    <img src={Book} alt="" />
+                                                </span>
+
+                                                <div className="details">
+                                                    <h3 className="title">create animation for app</h3>
+                                                    <span className="status">working on</span>
+                                                </div>
+
+                                                <span className="time">11:50 AM</span>
+                                            </div>
+                                        </div>
+
+                                        <a href="" className='all-activity-btn'>see all activity</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -329,7 +384,53 @@ function Main() {
 
                 <div className="col-span-12 2xl:col-span-3">
                     <div className="profile-area">
+                        <div className="profile-nav">
+                            <button className="back">
+                                <img src={RightArrow} alt="" />
+                            </button>
+                            <button className="options">
+                                <img src={Ellipsis} alt="" />
+                            </button>
+                        </div>
 
+                        <div className="profile-data">
+                            <div className="avatar">
+                                <img src={Avatar} alt="" />
+                            </div>
+                            <div className="name-data">
+                                <a href="#" className='fullname'>jack grealish</a>
+                                <span className="job-title">private sector employee</span>
+                            </div>
+
+                            <a href="#" className="edit-btn">
+                                <img src={Edit} alt="" />
+                                <span>edit profile</span>
+                            </a>
+                        </div>
+
+                        <div className="work-hours">
+                            <h3 className="title">Working Hours</h3>
+                            <div className="timeframe">
+                                <div className="time_data">
+                                    <span className="title">work start</span>
+                                    <span className="time-assigned">09:00am</span>
+                                </div>
+
+                                <div className="time_data">
+                                    <span className="title">work end</span>
+                                    <span className="time-assigned">05:00pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="city">
+                            <h1 className="city-name">sukabumi city</h1>
+                            <div className="grp">
+                                <span className="place">sukabumi, indonesia</span>
+                                <span className="bullet"></span>
+                                <span className="timezone">gmt+7</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
