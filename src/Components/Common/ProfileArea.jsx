@@ -6,7 +6,7 @@ import Avatar from '../assets/avatar.png';
 function ProfileArea({showProfile, setShowProfile}) {
 
   return (
-    <div className={`${ showProfile ? 'right-[0px] 2xl:right-[0px]' : 'right-[-500px] 2xl:right-[0px]'} col-span-12 2xl:col-span-3 fixed right-[-500px] 2xl:right-[0px] h-full w-3/12  active_profile-wrapper`}>
+    <div className={`${ showProfile ? 'right-[0px] 2xl:right-[0px]' : 'right-[-500px] 2xl:right-[0px]'} col-span-12 2xl:col-span-3 fixed 2xl:right-[0px] h-full w-3/12  active_profile-wrapper`}>
         <div className="profile-area">
             <div className="profile-nav">
                 <button className='back 2xl:hidden'  onClick={() => setShowProfile(!showProfile)}>
