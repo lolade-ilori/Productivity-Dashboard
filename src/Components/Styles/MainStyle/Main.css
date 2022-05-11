@@ -852,6 +852,12 @@ body {
           transform: translate(-50%, 0);
 }
 
+.wrapper .content .active_profile-wrapper {
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+  z-index: 150;
+}
+
 .wrapper .content .profile-area {
   height: 100%;
   background-image: url("../../assets/original.jpg");

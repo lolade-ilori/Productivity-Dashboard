@@ -638,6 +638,11 @@ body {
       }
     }
 
+    .active_profile-wrapper {
+      transition: right 0.5s ease;
+      z-index: 150;
+    }
+
     .profile-area {
       height: 100%;
       background-image: url("../../assets/original.jpg");
